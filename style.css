@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #ffc400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 45px;
+}
+
+p {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 20px;
+    border: #ffc400;
+}
+
+.money-img {
+    width: 30%;
+}
+
+.currency {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#line {
+    border: none;
+    border-bottom: 3px solid #ffc400;
+    width: 20%;
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+select {
+    width: 75px;
+    padding: 5px;
+    border: 2px solid #ffc400;
+    border-radius: 5px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 1000px) {
+    .currency input {
+        width: 200px;
+    }
+    .money-img {
+        width: 400px;
+    }
+}
